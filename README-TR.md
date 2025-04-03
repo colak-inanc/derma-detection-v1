@@ -1,6 +1,8 @@
 # Derma-Detection
 Görsel ve Tıbbi Verilere Dayalı Dermatolojik Hastalık Tespiti
 
+>[Scrum Takip Tahtamız](https://miro.com/app/board/uXjVIMWBJzw=/)
+
 ## Proje Detayları
 1. <b>Modüller</b>
     1. <b>Laboratuvar Test Verilerine Dayalı Teşhis</b>

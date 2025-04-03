@@ -1,6 +1,8 @@
 # Derma-Detection
 Dermatologic Disease Detection Based on Visual and Medical Data
 
+>[Scrum Tracking Board](https://miro.com/app/board/uXjVIMWBJzw=/)
+
 ## Project Details
 1. <b>Moduls</b>
     1. <b>Diagnosis Based on Lab Test Data</b>
