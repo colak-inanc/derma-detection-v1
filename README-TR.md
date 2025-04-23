@@ -22,14 +22,14 @@ Görsel ve Tıbbi Verilere Dayalı Dermatolojik Hastalık Tespiti
 
 2. <b>Teknolojiler ve Araçlar</b>
 
-| Alan                       | Kütüphane / Araç                   |
-|----------------------------|------------------------------------|
-| Model Geliştirme           | scikit-learn, XGBoost, PyTorch     |
-| Görsel Analiz              | CNN, ResNet, Grad-CAM              |
-| Tablosal Veri İşleme       | pandas, SHAP, LightGBM             |
-| PDF Ayrıştırm              | pdfplumber, PyMuPDF                |
-| Açıklanabilirlik           | SHAP, Captum, Gemini               |
-| Arayüz(Demo)               | Streamlit                          |
+| Area                       | Libraries / Tools                      |
+|----------------------------|----------------------------------------|
+| Model Development          | scikit-learn, XGBoost, PyTorch         |
+| Image Analysis             | EfficientNet-B0/B2, ResNet50, Grad-CAM |
+| Tabular Data Processing    | pandas, SHAP, LightGBM                 |
+| PDF Parsing                | pdfplumber, PyMuPDF                    |
+| Explainability             | SHAP, Captum, Gemini(LLM)              |
+| Interface (Demo)           | Streamlit                              |
 
 
 <br><br>3. <b>Kullanılacak Veri Kümesi</b>

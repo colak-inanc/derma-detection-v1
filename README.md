@@ -22,14 +22,14 @@ Dermatologic Disease Detection Based on Visual and Medical Data
 
 2. <b>Technologies and Tools</b>
 
-| Area                       | Libraries / Tools                  |
-|----------------------------|------------------------------------|
-| Model Development          | scikit-learn, XGBoost, PyTorch     |
-| Image Analysis             | CNN, ResNet, Grad-CAM              |
-| Tabular Data Processing    | pandas, SHAP, LightGBM             |
-| PDF Parsing                | pdfplumber, PyMuPDF                |
-| Explainability             | SHAP, Captum, Gemini               |
-| Interface (Demo)           | Streamlit                          |
+| Area                       | Libraries / Tools                      |
+|----------------------------|----------------------------------------|
+| Model Development          | scikit-learn, XGBoost, PyTorch         |
+| Image Analysis             | EfficientNet-B0/B2, ResNet50, Grad-CAM |
+| Tabular Data Processing    | pandas, SHAP, LightGBM                 |
+| PDF Parsing                | pdfplumber, PyMuPDF                    |
+| Explainability             | SHAP, Captum, Gemini(LLM)              |
+| Interface (Demo)           | Streamlit                              |
 
 <br><br>3. <b>Data sets for this project</b>
 > Data sets to be used for Dermatologic Images
