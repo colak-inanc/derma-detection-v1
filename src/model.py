@@ -1,7 +1,8 @@
-from torchvision.models import efficientnet_b2
-import torch.nn as nn
+import torch 
+from torchvision.models import efficientnet_b2, EfficientNet_B2_Weights
 
 def get_model(num_classes):
-    model = efficientnet_b2(pretrained=True)
-    model.classifier[1] = nn.Linear(model.classifier[1].in_features, num_classes)
+    weights = EfficientNet_B2_Weights.DEFAULT
+    model = efficientnet_b2(weights=weights)
+    model.classifier[1] = torch.nn.Linear(model.classifier[1].in_features, num_classes)
     return model
