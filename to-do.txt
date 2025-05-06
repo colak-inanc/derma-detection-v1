@@ -1,0 +1,45 @@
+✅ PROJEYİ ÇALIŞTIRMA ADIMLARI – TO-DO LİSTESİ
+
+1. Ortam Kurulumu
+----------------------
+> python -m venv .venv
+> .venv\Scripts\activate             (Windows)
+veya
+> source .venv/bin/activate         (macOS/Linux)
+
+2. Gerekli Kütüphaneleri Yükle
+----------------------
+> pip install -r requirements.txt
+
+3. Eğitim Verilerini Hazırla
+----------------------
+- Aşağıdaki dizin yapısını oluştur:
+    data-sets/
+    └── Dataset/
+        ├── s-train/ (eğitim için)
+        ├── s-val/   (doğrulama için)
+        └── s-test/  (test için)
+
+- Görselleri 260x260 boyutuna getirmek için `sizing-data.py` gibi bir script kullan.
+
+4. Modeli Eğit
+----------------------
+> python main.py
+- Eğitim sonunda `models/efficientnet_b2_skin_disease.pth` oluşturulur.
+
+5. Test / Doğrulama Yap
+----------------------
+> python src/validate.py
+
+6. Yeni Veri Seti Eklemek İstersen
+----------------------
+- `data-sets/Dataset/s-train/` klasörüne ilgili sınıf klasörleriyle birlikte görselleri ekle.
+- Yeniden eğitim için `main.py` dosyasını çalıştır.
+
+7. Not: Dizin yapısının doğru olduğundan emin ol!
+----------------------
+- Her sınıf bir klasör olacak şekilde:
+  s-train/
+    ├── class_1/
+    ├── class_2/
+    └── ...

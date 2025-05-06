@@ -54,8 +54,5 @@ def validate_model(model_path="models/efficientnet_b2_skin_disease.pth", data_di
     ))
 
 
-    #print("\nConfusion Matrix:")
-    #print(confusion_matrix(all_labels, all_preds))
-
 if __name__ == "__main__":
     validate_model()

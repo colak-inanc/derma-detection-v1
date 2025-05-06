@@ -1,13 +1,23 @@
-from src.dataloader import get_train_loader
-from src.model import get_model
-from src.train import train_model
-import torch
+from src.md.predict_router import route_prediction
+from src.md.explain_with_gemini import explain_result
 
-train_loader, classes = get_train_loader()
-model = get_model(num_classes=len(classes))
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+sample_input = {
+    "image_path": "data-sets/Dataset/s-test/Acne and Rosacea Photos/img123.jpg",
+    "cbc_data": {
+        "HCT": 50.5,
+        "MCV": 84.7,
+        "PDW": 17.8,
 
-train_model(model, train_loader, device)
+    },
+    "symptoms": ["itching", "scaling"]
+}
+prediction_results = route_prediction(sample_input)
 
-# Eğitim bittiğinde modeli kaydet
-torch.save(model.state_dict(), "models/efficientnet_b2_skin_disease.pth")
+summary_prompt = f"Aşağıdaki verileri değerlendir:\n\n{prediction_results}\n\nDurumu açıkla."
+explanation = explain_result(summary_prompt)
+
+print("🔍 Tahminler:")
+print(prediction_results)
+
+print("\nAI Açıklaması:")
+print(explanation)
