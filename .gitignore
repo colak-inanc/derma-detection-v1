@@ -21,6 +21,8 @@ data-sets/Dataset/*.tar.gz
 data-sets/Dataset/*.csv
 data-sets/Dataset/*.json
 data-sets/Dataset/*.xlsx
+data-sets/Dataset/medical-data/*.csv
+data-sets/Dataset/medical-data/*.xlsx
 
 # Eğer klasör yapısını korumak istiyorsan boş .gitkeep dosyaları bırak:
 # !data-sets/Dataset/.gitkeep
