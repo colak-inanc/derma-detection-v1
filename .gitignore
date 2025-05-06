@@ -28,11 +28,11 @@ data-sets/Dataset/*.xlsx
 # -------------------------------
 # 🧠 MODEL DOSYALARI
 # -------------------------------
-models/
-models/*.pth
-models/*.h5
-models/*.ckpt
-models/*.onnx
+# models/
+# models/*.pth
+# models/*.h5
+# models/*.ckpt
+# models/*.onnx
 
 # -------------------------------
 # 📜 TRAINING ARTIFACTS / LOGS
