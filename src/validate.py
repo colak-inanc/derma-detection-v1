@@ -3,7 +3,7 @@ from torchvision import datasets, transforms
 from torch.utils.data import DataLoader
 from sklearn.metrics import classification_report, confusion_matrix
 import numpy as np
-from src.model import get_model 
+from model import get_model 
 
 def validate_model(model_path="models/efficientnet_b2_skin_disease.pth", data_dir="data-sets/Dataset/s-test"):
     transform = transforms.Compose([

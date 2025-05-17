@@ -53,11 +53,12 @@ logs/
 .ipynb_checkpoints/
 *.ipynb~*
 
-# -------------------------------
-# 🖥️ IDE / SYSTEM / OS ARTIFACTS
-# -------------------------------
 .vscode/
 .idea/
 *.code-workspace
 .DS_Store
 Thumbs.db
+
+.pdf
+
+node_modules/
