@@ -61,7 +61,9 @@ data-sets/*.xlsx
 # -------------------------------
 # 🧠 Model ve Analiz Dosyaları
 # -------------------------------
-models/
+models/*
+!models/
+!models/.gitkeep
 models/*.pth
 models/*.h5
 models/*.ckpt
@@ -116,3 +118,14 @@ htmlcov/
 .coverage.*
 coverage.xml
 *.cover
+
+# -------------------------------
+# analysis-pdf ve gradcam-detect klasörleri repoda görünsün, içerikleri eklenmesin
+# -------------------------------
+src/analysis-pdf/*
+!src/analysis-pdf/
+!src/analysis-pdf/.gitkeep
+
+src/gradcam-detect/*
+!src/gradcam-detect/
+!src/gradcam-detect/.gitkeep
