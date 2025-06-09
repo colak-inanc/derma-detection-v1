@@ -50,6 +50,9 @@ Thumbs.db
 # -------------------------------
 # 📁 Veri ve Model Dosyaları
 # -------------------------------
+data-sets/*
+!data-sets/
+!data-sets/.gitkeep
 data-sets/test-new/
 data-sets/train-new/
 data-sets/*.zip
@@ -61,7 +64,7 @@ data-sets/*.xlsx
 # -------------------------------
 # 🧠 Model ve Analiz Dosyaları
 # -------------------------------
-models/*
+models/
 !models/
 !models/.gitkeep
 models/*.pth
@@ -129,3 +132,6 @@ src/analysis-pdf/*
 src/gradcam-detect/*
 !src/gradcam-detect/
 !src/gradcam-detect/.gitkeep
+
+to-do.txt
+
