@@ -4,6 +4,7 @@
 ----------------------
 > python -m venv .venv
 > .venv\Scripts\activate             (Windows)
+
 veya
 > source .venv/bin/activate         (macOS/Linux)
 
